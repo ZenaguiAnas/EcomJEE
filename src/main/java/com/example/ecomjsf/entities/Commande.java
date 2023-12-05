@@ -23,43 +23,43 @@ public class Commande {
     public Commande() {
     }
 
-    public Commande(Long id, String orderId, Client client, List<Product> products) {
-        this.id = id;
-        this.orderId = orderId;
-        this.client = client;
-        this.products = products;
-    }
-
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getOrderId() {
-        return orderId;
-    }
-
-    public void setOrderId(String orderId) {
-        this.orderId = orderId;
-    }
-
-    public List<Product> getProducts() {
-        return products;
-    }
-
-    public void setProducts(List<Product> products) {
-        this.products = products;
-    }
-
-    public Client getClient() {
-        return client;
-    }
-
-    public void setClient(Client client) {
-        this.client = client;
-    }
+//    public Commande(Long id, String orderId, Client client, List<Product> products) {
+//        this.id = id;
+//        this.orderId = orderId;
+//        this.client = client;
+//        this.products = products;
+//    }
+//
+//
+//    public Long getId() {
+//        return id;
+//    }
+//
+//    public void setId(Long id) {
+//        this.id = id;
+//    }
+//
+//    public String getOrderId() {
+//        return orderId;
+//    }
+//
+//    public void setOrderId(String orderId) {
+//        this.orderId = orderId;
+//    }
+//
+//    public List<Product> getProducts() {
+//        return products;
+//    }
+//
+//    public void setProducts(List<Product> products) {
+//        this.products = products;
+//    }
+//
+//    public Client getClient() {
+//        return client;
+//    }
+//
+//    public void setClient(Client client) {
+//        this.client = client;
+//    }
 }

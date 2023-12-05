@@ -11,10 +11,10 @@
 
         <properties>
             <!-- Specify your database connection properties -->
-            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ecomlsi"/>
-            <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ecomlsi"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
 
             <!-- Specify the EclipseLink target database -->
             <property name="eclipselink.target-database" value="org.eclipse.persistence.platform.database.MySQLPlatform"/>
@@ -22,13 +22,10 @@
             <!-- Enable EclipseLink logging -->
             <property name="eclipselink.logging.level.sql" value="FINE"/>
 
-            <!-- Configure DDL generation -->
-            <property name="eclipselink.ddl-generation" value="create-tables"/>
-            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
-
-            <!-- Additional properties, if needed -->
-            <!-- <property name="eclipselink.weaving" value="false"/> -->
-            <!-- <property name="eclipselink.query-results-cache" value="true"/> -->
+            <!-- Jakarta Persistence properties for schema generation -->
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <property name="javax.persistence.schema-generation.create-source" value="metadata"/>
+            <property name="javax.persistence.schema-generation.drop-source" value="metadata"/>
         </properties>
     </persistence-unit>
 
